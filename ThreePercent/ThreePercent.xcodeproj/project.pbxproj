@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23F7951022901A05006292FF /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7950F22901A05006292FF /* SelectViewController.swift */; };
+		23F7951222901B59006292FF /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7951122901B59006292FF /* CameraViewController.swift */; };
+		23F79514229028E2006292FF /* ReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F79513229028E2006292FF /* ReadyViewController.swift */; };
 		99F11FE02290051100DC8C5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F11FDF2290051100DC8C5B /* AppDelegate.swift */; };
 		99F11FE22290051100DC8C5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F11FE12290051100DC8C5B /* ViewController.swift */; };
 		99F11FE52290051100DC8C5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F11FE32290051100DC8C5B /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23F7950F22901A05006292FF /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		23F7951122901B59006292FF /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		23F79513229028E2006292FF /* ReadyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyViewController.swift; sourceTree = "<group>"; };
 		99F11FDC2290051100DC8C5B /* ThreePercent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreePercent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F11FDF2290051100DC8C5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99F11FE12290051100DC8C5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +66,9 @@
 				99F11FE62290051100DC8C5B /* Assets.xcassets */,
 				99F11FE82290051100DC8C5B /* LaunchScreen.storyboard */,
 				99F11FEB2290051100DC8C5B /* Info.plist */,
+				23F7950F22901A05006292FF /* SelectViewController.swift */,
+				23F7951122901B59006292FF /* CameraViewController.swift */,
+				23F79513229028E2006292FF /* ReadyViewController.swift */,
 			);
 			path = ThreePercent;
 			sourceTree = "<group>";
@@ -135,7 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23F79514229028E2006292FF /* ReadyViewController.swift in Sources */,
 				99F11FE22290051100DC8C5B /* ViewController.swift in Sources */,
+				23F7951222901B59006292FF /* CameraViewController.swift in Sources */,
+				23F7951022901A05006292FF /* SelectViewController.swift in Sources */,
 				99F11FE02290051100DC8C5B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 43GGNY3688;
+				DEVELOPMENT_TEAM = 3R9KGR8P9F;
 				INFOPLIST_FILE = ThreePercent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 43GGNY3688;
+				DEVELOPMENT_TEAM = 3R9KGR8P9F;
 				INFOPLIST_FILE = ThreePercent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
