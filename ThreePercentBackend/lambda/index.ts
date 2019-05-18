@@ -37,9 +37,33 @@ function generateUniqueId(): string {
 
 interface CreateUserResponse {
     id: string;
-    upload: S3.PresignedPost;
+    upload: PresignedPost;
     refreshUrl: string;
 }
+
+interface PresignedPost {
+    url: string;
+    fields: PresignedPostField[];
+}
+
+type PresignedPostField = [string, string];
+
+const fieldOrder = [
+    'key',
+    'bucket',
+    'acl',
+    'success_action_redirect',
+    'content-type',
+    'x-amz-meta-uuid',
+    'x-amz-server-side-encryption',
+    'x-amz-credential',
+    'x-amz-algorithm',
+    'x-amz-date',
+    'x-amz-security-token',
+    'x-amz-meta-tag',
+    'policy',
+    'x-amz-signature',
+];
 
 function baseUrl(requestContext: APIGatewayEventRequestContext): string {
     const { domainName, stage } = requestContext;
@@ -50,10 +74,20 @@ async function main(event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult>
     event.requestContext.resourcePath;
     if (event.path === '/users' && event.httpMethod === 'POST') {
         const id = generateUniqueId();
-        const presigned = await createPresignedPost(id);
+        const { url, fields: fieldMap } = await createPresignedPost(id);
+        for (const key of Object.keys(fieldMap)) {
+            fieldMap[key.toLowerCase()] = fieldMap[key];
+        }
+        const fields: PresignedPostField[] = [];
+        for (const key of fieldOrder) {
+            if (fieldMap.hasOwnProperty(key)) {
+                fields.push([key, fieldMap[key]]);
+            }
+        }
+
         const body: CreateUserResponse = {
             id,
-            upload: presigned,
+            upload: { url, fields },
             refreshUrl: `${baseUrl(event.requestContext)}/users/${id}/refresh`,
         };
         return {
