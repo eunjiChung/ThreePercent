@@ -50,13 +50,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="타이틀" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bf-pv-QeQ">
-                                <rect key="frame" x="45" y="93" width="292" height="48"/>
+                                <rect key="frame" x="45" y="93" width="292" height="253"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="253" id="Oc9-aW-s7f"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="숫자" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjN-AP-Eyg">
-                                <rect key="frame" x="45" y="88" width="292" height="48"/>
+                                <rect key="frame" x="45" y="93" width="292" height="253"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="253" id="Icb-hu-saa"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="40"/>
                                 <color key="textColor" red="0.96078431372549022" green="0.20392156862745098" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -64,7 +70,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hjN-AP-Eyg" firstAttribute="top" secondItem="mJI-Iu-wsv" secondAttribute="top" constant="88" id="5L6-Vt-Oa2"/>
+                            <constraint firstItem="hjN-AP-Eyg" firstAttribute="top" secondItem="mJI-Iu-wsv" secondAttribute="top" constant="93" id="5L6-Vt-Oa2"/>
                             <constraint firstItem="7bf-pv-QeQ" firstAttribute="top" secondItem="mJI-Iu-wsv" secondAttribute="top" constant="93" id="CRc-M6-zLF"/>
                             <constraint firstItem="7bf-pv-QeQ" firstAttribute="leading" secondItem="yLa-uv-U5R" secondAttribute="leading" constant="45" id="HAg-xZ-YKD"/>
                             <constraint firstItem="hjN-AP-Eyg" firstAttribute="leading" secondItem="yLa-uv-U5R" secondAttribute="leading" constant="45" id="OUE-C6-CzX"/>
