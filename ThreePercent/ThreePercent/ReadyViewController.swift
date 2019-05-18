@@ -29,6 +29,22 @@ class ReadyViewController: UIViewController {
         titleMessage.text = "옷깃에 스치려면\n\n남았어요...";
         batteryNumberic.text = "\n\(BatteryRemnant)%"
         // Do any additional setup after loading the view.
+        swipeHandler()
+    }
+    
+    
+    func swipeHandler() {
+        let upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
+        upSwipe.direction = .up
+        view.addGestureRecognizer(upSwipe)
+    }
+    
+    @objc func handleSwipes(_ sender:UISwipeGestureRecognizer) {
+        
+        if (sender.direction == .up) {
+            print("Swipe up")
+            tabBarController?.selectedIndex = 1
+        }
     }
     
 
