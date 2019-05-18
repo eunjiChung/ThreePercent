@@ -24,10 +24,13 @@ class ReadyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let BatteryRemnant = BatteryLevel * 100 - 3;
+        UIDevice.current.isBatteryMonitoringEnabled = true
         
-        titleMessage.text = "옷깃에 스치려면\n\n남았어요...";
-        batteryNumberic.text = "\n\(BatteryRemnant)%"
+        let BatteryRemnant = Int(BatteryLevel * 100 - 3);
+        
+        let data: Data = "<font color=white size=40 face=AppleSDGothicNeo-UltraLight>옷깃에 스치려면<br><font color=red face=AppleSDGothicNeo-Bold>\(BatteryRemnant)%</font><br>남았어요</font>".data(using: .unicode)!
+        let str = try! NSAttributedString(data: data, options: [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil)
+        titleMessage.attributedText = str;
         // Do any additional setup after loading the view.
         swipeHandler()
     }

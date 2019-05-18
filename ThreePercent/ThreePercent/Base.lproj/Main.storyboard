@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -58,30 +58,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="숫자" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjN-AP-Eyg">
-                                <rect key="frame" x="45" y="93" width="292" height="253"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="253" id="Icb-hu-saa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="40"/>
-                                <color key="textColor" red="0.96078431372549022" green="0.20392156862745098" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.019607843137254902" green="0.019607843137254902" blue="0.019607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="hjN-AP-Eyg" firstAttribute="top" secondItem="mJI-Iu-wsv" secondAttribute="top" constant="93" id="5L6-Vt-Oa2"/>
                             <constraint firstItem="7bf-pv-QeQ" firstAttribute="top" secondItem="mJI-Iu-wsv" secondAttribute="top" constant="93" id="CRc-M6-zLF"/>
                             <constraint firstItem="7bf-pv-QeQ" firstAttribute="leading" secondItem="yLa-uv-U5R" secondAttribute="leading" constant="45" id="HAg-xZ-YKD"/>
-                            <constraint firstItem="hjN-AP-Eyg" firstAttribute="leading" secondItem="yLa-uv-U5R" secondAttribute="leading" constant="45" id="OUE-C6-CzX"/>
-                            <constraint firstItem="yLa-uv-U5R" firstAttribute="trailing" secondItem="hjN-AP-Eyg" secondAttribute="trailing" constant="77" id="XbN-ET-9JF"/>
                             <constraint firstItem="yLa-uv-U5R" firstAttribute="trailing" secondItem="7bf-pv-QeQ" secondAttribute="trailing" constant="77" id="rge-vx-Day"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yLa-uv-U5R"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="dkn-qC-VOn"/>
                     <connections>
-                        <outlet property="batteryNumberic" destination="hjN-AP-Eyg" id="3Ly-dx-XQA"/>
                         <outlet property="titleMessage" destination="7bf-pv-QeQ" id="yFk-ik-OuV"/>
                     </connections>
                 </viewController>
@@ -235,6 +222,7 @@
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cpz-XJ-Cr9">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
