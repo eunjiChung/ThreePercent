@@ -8,15 +8,19 @@
 
 import UIKit
 
-class CameraViewController: UIViewController {
-
+class CameraViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    
+    var imagePicker : UIImagePickerController!
+    
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         // Do any additional setup after loading the view.
     }
     
-
+    
     /*
     // MARK: - Navigation
 
@@ -27,4 +31,17 @@ class CameraViewController: UIViewController {
     }
     */
 
+    @IBAction func takePicture(_ sender: Any) {
+        imagePicker =  UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .camera
+        
+        present(imagePicker, animated: true, completion: nil)
+
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        imagePicker.dismiss(animated: true, completion: nil)
+        imageView.image = info[.originalImage] as? UIImage
+    }
 }
