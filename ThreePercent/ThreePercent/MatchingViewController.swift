@@ -8,7 +8,13 @@
 
 import UIKit
 
-class MatchingViewController: UIViewController {
+class MatchingViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
+    
+    // MARK : - IBOutlet
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var pageControl: UIPageControl!
+    
     
 
     // MARK : - Life Cycle
@@ -17,6 +23,9 @@ class MatchingViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         swipeHandler()
+        setPageControler()
+        
+        textLabel.text = "인연이라면\n다시\n만나겠죠"
     }
     
     // MARK : - Layout
@@ -33,14 +42,38 @@ class MatchingViewController: UIViewController {
     }
     
     @objc func handleSwipes(_ sender:UISwipeGestureRecognizer) {
-        
         if (sender.direction == .down) {
-            print("Swipe down")
             tabBarController?.selectedIndex = 0
         }
-        
     }
     
+    // MARK : - UICollectionViewDataSource
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
     
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MatchImageCollectionViewCell", for: indexPath)
+        return cell
+    }
+    
+    // MARK: - FlowLayout
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return collectionView.frame.size
+    }
+    
+    // MARK : - UICollectionViewDelegate
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        self.pageControl.currentPage = indexPath.item
+    }
 
+    // MARK: - Private MEthod
+    func setPageControler() {
+        self.pageControl.currentPageIndicatorTintColor = UIColor.init(red: 245/255, green: 52/255, blue: 74/255, alpha: 1.0)
+        self.pageControl.numberOfPages = 3
+    }
 }

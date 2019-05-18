@@ -17,6 +17,8 @@
 		99F11FEA2290051100DC8C5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F11FE82290051100DC8C5B /* LaunchScreen.storyboard */; };
 		99F12015229039A500DC8C5B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F12014229039A500DC8C5B /* BaseViewController.swift */; };
 		99F1201722903DFC00DC8C5B /* MatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1201622903DFC00DC8C5B /* MatchingViewController.swift */; };
+		99F1201A229052F500DC8C5B /* MatchImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F12019229052F500DC8C5B /* MatchImageCollectionViewCell.swift */; };
+		99F1201C2290648100DC8C5B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1201B2290648100DC8C5B /* GradientView.swift */; };
 		A91F34774F9F5761A6667048 /* Pods_ThreePercent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1D8FB99D480C9FCC5D7476 /* Pods_ThreePercent.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		99F11FEB2290051100DC8C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99F12014229039A500DC8C5B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		99F1201622903DFC00DC8C5B /* MatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingViewController.swift; sourceTree = "<group>"; };
+		99F12019229052F500DC8C5B /* MatchImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		99F1201B2290648100DC8C5B /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		DC3880D58D553171F5E97273 /* Pods-ThreePercent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreePercent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThreePercent/Pods-ThreePercent.debug.xcconfig"; sourceTree = "<group>"; };
 		EA0EE7881D4A539DCA2FABAD /* Pods-ThreePercent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreePercent.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThreePercent/Pods-ThreePercent.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,14 +88,24 @@
 		99F120132290350400DC8C5B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				99F12018229052D900DC8C5B /* Cell */,
 				23F7950F22901A05006292FF /* SelectViewController.swift */,
 				23F7951122901B59006292FF /* CameraViewController.swift */,
 				23F79513229028E2006292FF /* ReadyViewController.swift */,
 				99F11FE12290051100DC8C5B /* ViewController.swift */,
 				99F12014229039A500DC8C5B /* BaseViewController.swift */,
 				99F1201622903DFC00DC8C5B /* MatchingViewController.swift */,
+				99F1201B2290648100DC8C5B /* GradientView.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		99F12018229052D900DC8C5B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				99F12019229052F500DC8C5B /* MatchImageCollectionViewCell.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		D71180852C48B1C15367FC21 /* Pods */ = {
@@ -208,9 +222,11 @@
 				99F11FE22290051100DC8C5B /* ViewController.swift in Sources */,
 				99F1201722903DFC00DC8C5B /* MatchingViewController.swift in Sources */,
 				23F7951222901B59006292FF /* CameraViewController.swift in Sources */,
+				99F1201A229052F500DC8C5B /* MatchImageCollectionViewCell.swift in Sources */,
 				23F7951022901A05006292FF /* SelectViewController.swift in Sources */,
 				99F11FE02290051100DC8C5B /* AppDelegate.swift in Sources */,
 				99F12015229039A500DC8C5B /* BaseViewController.swift in Sources */,
+				99F1201C2290648100DC8C5B /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +381,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-.ThreePercent";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eunji.ThreePercent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -385,7 +401,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-.ThreePercent";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eunji.ThreePercent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
