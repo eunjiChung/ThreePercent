@@ -37,11 +37,15 @@ class ReadyViewController: BaseViewController {
 
     // MARK : - Swipe Handler
     func swipeHandler() {
-        if Int(CURRENT_BATTERY_LEVEL * 100) <= 20 {
-            let upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
-            upSwipe.direction = .up
-            view.addGestureRecognizer(upSwipe)
-        }
+        let upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
+        upSwipe.direction = .up
+        view.addGestureRecognizer(upSwipe)
+        
+//        if Int(CURRENT_BATTERY_LEVEL * 100) <= 20 {
+//            let upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
+//            upSwipe.direction = .up
+//            view.addGestureRecognizer(upSwipe)
+//        }
     }
     
     @objc func handleSwipes(_ sender:UISwipeGestureRecognizer) {

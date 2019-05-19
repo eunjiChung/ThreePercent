@@ -9,18 +9,30 @@
 /* Begin PBXBuildFile section */
 		23F7951222901B59006292FF /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7951122901B59006292FF /* CameraViewController.swift */; };
 		23F79514229028E2006292FF /* ReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F79513229028E2006292FF /* ReadyViewController.swift */; };
+		994053CF2290ABB400BEA753 /* MatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994053CE2290ABB400BEA753 /* MatchingViewController.swift */; };
+		994053D22290ACDA00BEA753 /* LottieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994053D02290ACDA00BEA753 /* LottieTableViewCell.swift */; };
+		994053D32290ACDA00BEA753 /* LottieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 994053D12290ACDA00BEA753 /* LottieTableViewCell.xib */; };
+		994053D62290ACE800BEA753 /* TabBarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994053D42290ACE800BEA753 /* TabBarTableViewCell.swift */; };
+		994053D72290ACE800BEA753 /* TabBarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 994053D52290ACE800BEA753 /* TabBarTableViewCell.xib */; };
+		994053DA2290ACFA00BEA753 /* TabViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994053D82290ACFA00BEA753 /* TabViewTableViewCell.swift */; };
+		994053DB2290ACFA00BEA753 /* TabViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 994053D92290ACFA00BEA753 /* TabViewTableViewCell.xib */; };
+		994053DE2290AF6100BEA753 /* TabBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994053DC2290AF6100BEA753 /* TabBarCollectionViewCell.swift */; };
+		994053DF2290AF6100BEA753 /* TabBarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 994053DD2290AF6100BEA753 /* TabBarCollectionViewCell.xib */; };
+		994053E32290B59200BEA753 /* RealtimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994053E12290B59200BEA753 /* RealtimeCollectionViewCell.swift */; };
+		994053E42290B59200BEA753 /* RealtimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 994053E22290B59200BEA753 /* RealtimeCollectionViewCell.xib */; };
+		994053E72290B5A500BEA753 /* SendLoverCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994053E52290B5A500BEA753 /* SendLoverCollectionViewCell.swift */; };
+		994053E82290B5A500BEA753 /* SendLoverCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 994053E62290B5A500BEA753 /* SendLoverCollectionViewCell.xib */; };
+		994053F02290BD5900BEA753 /* PickImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994053EE2290BD5900BEA753 /* PickImageCollectionViewCell.swift */; };
+		994053F12290BD5900BEA753 /* PickImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 994053EF2290BD5900BEA753 /* PickImageCollectionViewCell.xib */; };
+		994053F42290C3B600BEA753 /* MatchImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994053F22290C3B600BEA753 /* MatchImageCollectionViewCell.swift */; };
 		99F11FE02290051100DC8C5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F11FDF2290051100DC8C5B /* AppDelegate.swift */; };
-		99F11FE22290051100DC8C5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F11FE12290051100DC8C5B /* ViewController.swift */; };
 		99F11FE52290051100DC8C5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F11FE32290051100DC8C5B /* Main.storyboard */; };
 		99F11FE72290051100DC8C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F11FE62290051100DC8C5B /* Assets.xcassets */; };
 		99F11FEA2290051100DC8C5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F11FE82290051100DC8C5B /* LaunchScreen.storyboard */; };
 		99F12015229039A500DC8C5B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F12014229039A500DC8C5B /* BaseViewController.swift */; };
 		99F1201722903DFC00DC8C5B /* MatchedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1201622903DFC00DC8C5B /* MatchedViewController.swift */; };
-		99F1201A229052F500DC8C5B /* MatchImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F12019229052F500DC8C5B /* MatchImageCollectionViewCell.swift */; };
 		99F1201C2290648100DC8C5B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1201B2290648100DC8C5B /* GradientView.swift */; };
-		99F1202622908B7300DC8C5B /* RealtimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1202422908B7300DC8C5B /* RealtimeViewController.swift */; };
-		99F1202722908B7300DC8C5B /* RealtimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99F1202522908B7300DC8C5B /* RealtimeViewController.xib */; };
-		99F1202922908CBF00DC8C5B /* MatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1202822908CBF00DC8C5B /* MatchingViewController.swift */; };
+		99F1202C2290938100DC8C5B /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = 99F1202B2290938100DC8C5B /* 3.json */; };
 		A91F34774F9F5761A6667048 /* Pods_ThreePercent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1D8FB99D480C9FCC5D7476 /* Pods_ThreePercent.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,20 +40,32 @@
 		23F7951122901B59006292FF /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		23F79513229028E2006292FF /* ReadyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyViewController.swift; sourceTree = "<group>"; };
 		8C1D8FB99D480C9FCC5D7476 /* Pods_ThreePercent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreePercent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		994053CE2290ABB400BEA753 /* MatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingViewController.swift; sourceTree = "<group>"; };
+		994053D02290ACDA00BEA753 /* LottieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieTableViewCell.swift; sourceTree = "<group>"; };
+		994053D12290ACDA00BEA753 /* LottieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LottieTableViewCell.xib; sourceTree = "<group>"; };
+		994053D42290ACE800BEA753 /* TabBarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarTableViewCell.swift; sourceTree = "<group>"; };
+		994053D52290ACE800BEA753 /* TabBarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarTableViewCell.xib; sourceTree = "<group>"; };
+		994053D82290ACFA00BEA753 /* TabViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewTableViewCell.swift; sourceTree = "<group>"; };
+		994053D92290ACFA00BEA753 /* TabViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabViewTableViewCell.xib; sourceTree = "<group>"; };
+		994053DC2290AF6100BEA753 /* TabBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCollectionViewCell.swift; sourceTree = "<group>"; };
+		994053DD2290AF6100BEA753 /* TabBarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarCollectionViewCell.xib; sourceTree = "<group>"; };
+		994053E12290B59200BEA753 /* RealtimeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeCollectionViewCell.swift; sourceTree = "<group>"; };
+		994053E22290B59200BEA753 /* RealtimeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealtimeCollectionViewCell.xib; sourceTree = "<group>"; };
+		994053E52290B5A500BEA753 /* SendLoverCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendLoverCollectionViewCell.swift; sourceTree = "<group>"; };
+		994053E62290B5A500BEA753 /* SendLoverCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendLoverCollectionViewCell.xib; sourceTree = "<group>"; };
+		994053EE2290BD5900BEA753 /* PickImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		994053EF2290BD5900BEA753 /* PickImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		994053F22290C3B600BEA753 /* MatchImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		99F11FDC2290051100DC8C5B /* ThreePercent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreePercent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F11FDF2290051100DC8C5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		99F11FE12290051100DC8C5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		99F11FE42290051100DC8C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99F11FE62290051100DC8C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99F11FE92290051100DC8C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99F11FEB2290051100DC8C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99F12014229039A500DC8C5B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		99F1201622903DFC00DC8C5B /* MatchedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedViewController.swift; sourceTree = "<group>"; };
-		99F12019229052F500DC8C5B /* MatchImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		99F1201B2290648100DC8C5B /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		99F1202422908B7300DC8C5B /* RealtimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeViewController.swift; sourceTree = "<group>"; };
-		99F1202522908B7300DC8C5B /* RealtimeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealtimeViewController.xib; sourceTree = "<group>"; };
-		99F1202822908CBF00DC8C5B /* MatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingViewController.swift; sourceTree = "<group>"; };
+		99F1202B2290938100DC8C5B /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
 		DC3880D58D553171F5E97273 /* Pods-ThreePercent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreePercent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThreePercent/Pods-ThreePercent.debug.xcconfig"; sourceTree = "<group>"; };
 		EA0EE7881D4A539DCA2FABAD /* Pods-ThreePercent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreePercent.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThreePercent/Pods-ThreePercent.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +82,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		994053E02290B56F00BEA753 /* tabCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				994053E12290B59200BEA753 /* RealtimeCollectionViewCell.swift */,
+				994053E22290B59200BEA753 /* RealtimeCollectionViewCell.xib */,
+				994053E52290B5A500BEA753 /* SendLoverCollectionViewCell.swift */,
+				994053E62290B5A500BEA753 /* SendLoverCollectionViewCell.xib */,
+				994053EE2290BD5900BEA753 /* PickImageCollectionViewCell.swift */,
+				994053EF2290BD5900BEA753 /* PickImageCollectionViewCell.xib */,
+			);
+			name = tabCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		994053E92290B5B100BEA753 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				994053DC2290AF6100BEA753 /* TabBarCollectionViewCell.swift */,
+				994053DD2290AF6100BEA753 /* TabBarCollectionViewCell.xib */,
+				994053D02290ACDA00BEA753 /* LottieTableViewCell.swift */,
+				994053D12290ACDA00BEA753 /* LottieTableViewCell.xib */,
+				994053D42290ACE800BEA753 /* TabBarTableViewCell.swift */,
+				994053D52290ACE800BEA753 /* TabBarTableViewCell.xib */,
+				994053D82290ACFA00BEA753 /* TabViewTableViewCell.swift */,
+				994053D92290ACFA00BEA753 /* TabViewTableViewCell.xib */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
 		99F11FD32290051100DC8C5B = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +131,7 @@
 		99F11FDE2290051100DC8C5B /* ThreePercent */ = {
 			isa = PBXGroup;
 			children = (
+				99F1202A2290935F00DC8C5B /* SupportingFiles */,
 				99F1201D2290876B00DC8C5B /* View */,
 				99F120132290350400DC8C5B /* Controller */,
 				99F11FDF2290051100DC8C5B /* AppDelegate.swift */,
@@ -96,13 +149,11 @@
 				99F12018229052D900DC8C5B /* Cell */,
 				23F7951122901B59006292FF /* CameraViewController.swift */,
 				23F79513229028E2006292FF /* ReadyViewController.swift */,
-				99F11FE12290051100DC8C5B /* ViewController.swift */,
 				99F12014229039A500DC8C5B /* BaseViewController.swift */,
 				99F1201622903DFC00DC8C5B /* MatchedViewController.swift */,
 				99F1201B2290648100DC8C5B /* GradientView.swift */,
-				99F1202422908B7300DC8C5B /* RealtimeViewController.swift */,
-				99F1202522908B7300DC8C5B /* RealtimeViewController.xib */,
-				99F1202822908CBF00DC8C5B /* MatchingViewController.swift */,
+				994053CE2290ABB400BEA753 /* MatchingViewController.swift */,
+				994053F22290C3B600BEA753 /* MatchImageCollectionViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -110,7 +161,8 @@
 		99F12018229052D900DC8C5B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				99F12019229052F500DC8C5B /* MatchImageCollectionViewCell.swift */,
+				994053E92290B5B100BEA753 /* TableViewCells */,
+				994053E02290B56F00BEA753 /* tabCollectionViewCell */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -120,6 +172,14 @@
 			children = (
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		99F1202A2290935F00DC8C5B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				99F1202B2290938100DC8C5B /* 3.json */,
+			);
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		D71180852C48B1C15367FC21 /* Pods */ = {
@@ -150,6 +210,7 @@
 				99F11FD82290051100DC8C5B /* Sources */,
 				99F11FD92290051100DC8C5B /* Frameworks */,
 				99F11FDA2290051100DC8C5B /* Resources */,
+				5E6F93A747B1F1B9053D6E2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,9 +259,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				994053DF2290AF6100BEA753 /* TabBarCollectionViewCell.xib in Resources */,
+				994053E42290B59200BEA753 /* RealtimeCollectionViewCell.xib in Resources */,
+				994053D72290ACE800BEA753 /* TabBarTableViewCell.xib in Resources */,
+				994053E82290B5A500BEA753 /* SendLoverCollectionViewCell.xib in Resources */,
+				99F1202C2290938100DC8C5B /* 3.json in Resources */,
+				994053D32290ACDA00BEA753 /* LottieTableViewCell.xib in Resources */,
+				994053F12290BD5900BEA753 /* PickImageCollectionViewCell.xib in Resources */,
 				99F11FEA2290051100DC8C5B /* LaunchScreen.storyboard in Resources */,
-				99F1202722908B7300DC8C5B /* RealtimeViewController.xib in Resources */,
 				99F11FE72290051100DC8C5B /* Assets.xcassets in Resources */,
+				994053DB2290ACFA00BEA753 /* TabViewTableViewCell.xib in Resources */,
 				99F11FE52290051100DC8C5B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +276,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5E6F93A747B1F1B9053D6E2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ThreePercent/Pods-ThreePercent-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThreePercent/Pods-ThreePercent-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E198E060A7E99515DE591CDB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -233,16 +323,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				994053D22290ACDA00BEA753 /* LottieTableViewCell.swift in Sources */,
+				994053DA2290ACFA00BEA753 /* TabViewTableViewCell.swift in Sources */,
+				994053E72290B5A500BEA753 /* SendLoverCollectionViewCell.swift in Sources */,
+				994053F02290BD5900BEA753 /* PickImageCollectionViewCell.swift in Sources */,
+				994053F42290C3B600BEA753 /* MatchImageCollectionViewCell.swift in Sources */,
 				23F79514229028E2006292FF /* ReadyViewController.swift in Sources */,
-				99F11FE22290051100DC8C5B /* ViewController.swift in Sources */,
+				994053E32290B59200BEA753 /* RealtimeCollectionViewCell.swift in Sources */,
+				994053D62290ACE800BEA753 /* TabBarTableViewCell.swift in Sources */,
 				99F1201722903DFC00DC8C5B /* MatchedViewController.swift in Sources */,
 				23F7951222901B59006292FF /* CameraViewController.swift in Sources */,
-				99F1201A229052F500DC8C5B /* MatchImageCollectionViewCell.swift in Sources */,
-				99F1202622908B7300DC8C5B /* RealtimeViewController.swift in Sources */,
 				99F11FE02290051100DC8C5B /* AppDelegate.swift in Sources */,
+				994053CF2290ABB400BEA753 /* MatchingViewController.swift in Sources */,
+				994053DE2290AF6100BEA753 /* TabBarCollectionViewCell.swift in Sources */,
 				99F12015229039A500DC8C5B /* BaseViewController.swift in Sources */,
 				99F1201C2290648100DC8C5B /* GradientView.swift in Sources */,
-				99F1202922908CBF00DC8C5B /* MatchingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

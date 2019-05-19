@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SendLoverCollectionViewCell" customModule="ThreePercent" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="616"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="616"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Arh-3B-pZi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="616"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name_tag_detail_img" translatesAutoresizingMaskIntoConstraints="NO" id="WIW-4D-Uaj">
+                                <rect key="frame" x="32.5" y="28" width="310" height="537"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="537" id="EXe-jN-yl6"/>
+                                    <constraint firstAttribute="width" constant="310" id="kw0-mv-l2i"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="87w-mC-FMb">
+                                <rect key="frame" x="47.5" y="101" width="280" height="348"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ghc-Lt-USH">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="348"/>
+                                        <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jUV-k7-zBG">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="348" id="5Om-bi-Igs"/>
+                                    <constraint firstAttribute="trailing" secondItem="ghc-Lt-USH" secondAttribute="trailing" id="Bnd-by-RlL"/>
+                                    <constraint firstAttribute="width" constant="280" id="SLI-qB-Kbh"/>
+                                    <constraint firstItem="ghc-Lt-USH" firstAttribute="top" secondItem="87w-mC-FMb" secondAttribute="top" id="SQ9-3M-hYm"/>
+                                    <constraint firstItem="ghc-Lt-USH" firstAttribute="leading" secondItem="87w-mC-FMb" secondAttribute="leading" id="Tkg-aM-FB7"/>
+                                    <constraint firstAttribute="bottom" secondItem="ghc-Lt-USH" secondAttribute="bottom" id="uBM-Pu-oFh"/>
+                                </constraints>
+                            </view>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="whf-ni-cZp">
+                                <rect key="frame" x="168" y="468" width="39" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="C7n-pL-KIm"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spv-h6-VmR">
+                                <rect key="frame" x="161.5" y="497" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="fz7-3S-4fT"/>
+                                    <constraint firstAttribute="width" constant="52" id="xnh-a9-CVp"/>
+                                </constraints>
+                                <state key="normal" image="heart_red_btn"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.61801677030000002" green="1" blue="0.78916227459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="87w-mC-FMb" firstAttribute="top" secondItem="Arh-3B-pZi" secondAttribute="top" constant="101" id="1fV-pe-izL"/>
+                            <constraint firstItem="spv-h6-VmR" firstAttribute="centerX" secondItem="WIW-4D-Uaj" secondAttribute="centerX" id="Bin-Ci-7Wn"/>
+                            <constraint firstItem="WIW-4D-Uaj" firstAttribute="centerX" secondItem="Arh-3B-pZi" secondAttribute="centerX" id="E01-48-sMk"/>
+                            <constraint firstItem="whf-ni-cZp" firstAttribute="top" secondItem="87w-mC-FMb" secondAttribute="bottom" constant="19" id="EcL-u1-HyF"/>
+                            <constraint firstItem="spv-h6-VmR" firstAttribute="top" secondItem="whf-ni-cZp" secondAttribute="bottom" constant="19" id="FdX-06-gfP"/>
+                            <constraint firstItem="WIW-4D-Uaj" firstAttribute="top" secondItem="Arh-3B-pZi" secondAttribute="top" constant="28" id="Ouj-O8-7P7"/>
+                            <constraint firstItem="87w-mC-FMb" firstAttribute="centerX" secondItem="WIW-4D-Uaj" secondAttribute="centerX" id="u4P-qa-O8G"/>
+                            <constraint firstItem="whf-ni-cZp" firstAttribute="centerX" secondItem="WIW-4D-Uaj" secondAttribute="centerX" id="xHp-2B-fQe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Arh-3B-pZi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="d7u-YN-t4l"/>
+                <constraint firstItem="Arh-3B-pZi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fbu-OU-3qM"/>
+                <constraint firstAttribute="bottom" secondItem="Arh-3B-pZi" secondAttribute="bottom" id="i8h-ul-5eG"/>
+                <constraint firstAttribute="trailing" secondItem="Arh-3B-pZi" secondAttribute="trailing" id="tD2-s5-9aY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="collectionView" destination="ghc-Lt-USH" id="USe-L6-ahE"/>
+                <outlet property="pageControl" destination="whf-ni-cZp" id="ALB-az-RwE"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="heart_red_btn" width="68" height="68"/>
+        <image name="name_tag_detail_img" width="310" height="538"/>
+    </resources>
+</document>
