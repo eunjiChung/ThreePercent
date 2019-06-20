@@ -7,6 +7,11 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
+
+public let CURRENT_BATTERY_LEVEL              =    UIDevice.current.batteryLevel
+public let requestURL                         =    "https://df41b5scg5.execute-api.ap-northeast-2.amazonaws.com/dev/users"
 
 class BaseViewController: UIViewController {
 
@@ -14,17 +19,27 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setBattery()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(batteryStateDidChange), name: UIDevice.batteryStateDidChangeNotification, object: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK : - Battery Check
+    var batteryState: UIDevice.BatteryState {
+        return UIDevice.current.batteryState
     }
-    */
+    
+    func setBattery() {
+        UIDevice.current.isBatteryMonitoringEnabled = true
+    }
+    
+    @objc func batteryStateDidChange(_ notification: Notification) {
+        switch batteryState {
+        case .unplugged, .unknown:
+            print("not charging")
+        case .charging, .full:
+            print("charging or full")
+        }
+    }
 
 }

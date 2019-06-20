@@ -6,5 +6,8 @@ target 'ThreePercent' do
   use_frameworks!
 
   # Pods for ThreePercent
+  pod 'lottie-ios'
+  pod 'Alamofire'
+   pod 'AlamofireImage'
 
 end
