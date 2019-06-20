@@ -198,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8rv-6t-TtI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2172" y="21"/>
+            <point key="canvasLocation" x="2133" y="21"/>
         </scene>
         <!--Item-->
         <scene sceneID="8lP-7N-evZ">
@@ -353,7 +353,7 @@
     <resources>
         <image name="arrow_down_btn" width="33" height="19"/>
         <image name="arrow_up_btn" width="33" height="20"/>
-        <image name="big_battery_frame" width="203" height="528"/>
+        <image name="big_battery_frame" width="209" height="518"/>
         <image name="charge_icon" width="94" height="94"/>
         <image name="home_black_down" width="375" height="145"/>
         <image name="home_black_up" width="375" height="145"/>
