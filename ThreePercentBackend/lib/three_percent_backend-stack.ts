@@ -21,6 +21,7 @@ export class ThreePercentBackendStack extends cdk.Stack {
                 BUCKET_NAME: bucket.bucketName,
             },
         });
+        bucket.grantReadWrite(handler);
 
         new LambdaRestApi(this, 'Api', {
             handler,
